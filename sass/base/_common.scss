@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    font-family: var(--main-font) ;
+    color:  var(--main-color);
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+h1,h2,h3,p,ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.link {
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+}
+
+.list {
+    list-style: none; /* Отменяем точки у списка */
+    padding: 0;
+    margin: 0;
+}
+
