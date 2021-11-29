@@ -1,13 +1,17 @@
-.features-section {
+.features{
     padding-bottom:0;
 }
-.features-list {
+.features__list {
     display: flex;
 }
-.features-list .item {
+.features__item{
     width: 270px;
+
+    &:not(:last-child){
+        margin-right: 30px;
+    }
 }
-.features-icon-container {
+.features__icon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,12 +24,10 @@
 }
 
 
-.features-list .item:not(:last-child){
-    margin-right: 30px;
-}
 
 
-.features-title {
+
+.features__title {
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -36,7 +38,7 @@
     text-align: left;
 }
 
-.text {
+.features__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;

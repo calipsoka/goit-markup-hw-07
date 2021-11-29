@@ -1,23 +1,17 @@
 .products {
     display: flex;
 }
-.products .item {
+.products__item {
     position: relative;
     width: 370px;
-}
-.products .item:not(:last-child){
-    margin-right: 30px;
-}
-.section-title {
-    margin-bottom: 50px;
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+
 }
-.title-wrapper {
+
+.products__wrapper{
     position: absolute;
     bottom:0;
     left:0;
@@ -30,9 +24,9 @@
 
     background-color: rgba(47, 48, 58, 0.8);
 
-
 }
-.title-wrapper p {
+
+.products__title {
     font-weight: bold;
     font-size: 14px;
     line-height: 1.14;

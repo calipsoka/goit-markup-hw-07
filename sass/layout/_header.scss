@@ -1,20 +1,8 @@
-header {
+.header {
     border-bottom: 1px solid #ECECEC;
 }
-.logo {
-    margin-right: 93px;
-    font-family: "Raleway","Arial", sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2;
-    color:#000000;
-}
-.logo-blue {
-    color: var(--accent-color);
-}
 
-/* Site navigation */
-.header {
+.header-container {
     display: flex;
     align-items: center;
 }
@@ -22,17 +10,19 @@ header {
     display: flex;
     align-items: center;
 }
-.site-nav {
+.main-nav__list {
     display: flex;
 }
 
-.site-nav .item:not(:last-child) {
-    margin-right: 40px;
-}
-.site-nav .item {
+
+.main-nav__item {
     position: relative;
+
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
 }
-.site-nav-link {
+.main-nav__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -45,16 +35,19 @@ header {
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em;
+
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    }
+
 }
 
 .current{
     color: var(--accent-color)
 }
-.site-nav-link:hover,
-.site-nav-link:focus {
-    color: var(--accent-color);
-}
-.site-nav-link.current::after{
+
+.main-nav__link.current::after{
     position: absolute;
     bottom: 0;
     content:"";
@@ -65,41 +58,4 @@ header {
 
     background-color: var(--accent-color);
     border-radius: 2px;
-}
-.contacts {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-}
-.contacts .item {
-display: flex;
-}
-.contacts .item + .item {
-    margin-left: 30px;
-}
-.contacts .link {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    color: var(--secondary-color);
-    font-family: Roboto, sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-}
-.contacts-link{
-    display: flex;
-    align-items: center;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-.icon-contacts {
-    margin-right: 10px;
-    fill: currentColor;
-}
-
-.contacts-link:hover,
-.contacts-link:focus {
-    color: var(--accent-color);
 }
